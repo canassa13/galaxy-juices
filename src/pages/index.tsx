@@ -1,13 +1,13 @@
-import { Flex } from '@chakra-ui/core';
 import React from 'react';
 
-import Background from '../assets/svg/background.svg';
+import Background from '../components/Background';
+import Header from '../components/Header';
 
 const Home: React.FC = () => {
     return (
-        <Flex>
-            <Background />
-        </Flex>
+        <Background>
+            <Header />
+        </Background>
     );
 };
 
