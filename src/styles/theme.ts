@@ -1,12 +1,16 @@
-import { theme } from '@chakra-ui/core';
+import { extendTheme } from '@chakra-ui/core';
 
-const customTheme = {
-    ...theme,
+const customTheme = extendTheme({
     fonts: {
-        body: 'Roboto, system-ui, sans-serif',
-        heading: 'Roboto, system-ui, sans-serif',
-        mono: 'Menlo, monospace'
+        body: 'Bungee, system-ui, sans-serif',
+        heading: 'Bungee, system-ui, sans-serif'
+    },
+    colors: {
+        gray: {
+            500: '#686868',
+            600: '#3A3A3A'
+        }
     }
-};
+});
 
 export default customTheme;

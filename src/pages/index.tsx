@@ -1,13 +1,21 @@
-import { Flex } from '@chakra-ui/core';
 import React from 'react';
 
-import Background from '../assets/svg/background.svg';
+import Head from '../infra/components/Head';
+import Background from '../patterns/Background';
+import Banner from '../patterns/Banner';
+import Footer from '../patterns/Footer';
+import Header from '../patterns/Header';
 
 const Home: React.FC = () => {
     return (
-        <Flex>
-            <Background />
-        </Flex>
+        <>
+            <Head title="Galaxy Juices BR" />
+            <Background>
+                <Header />
+            </Background>
+            <Banner />
+            <Footer />
+        </>
     );
 };
 
