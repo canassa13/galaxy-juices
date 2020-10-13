@@ -39,9 +39,15 @@
      "density": "4.0"
     }
    ],
+   "gcm_sender_id": "",
+   "gcm_user_visible_only": true,
+   "start_url": "/?utm_source=homescreen",
+   "permissions": [
+     "gcm"
+   ],
+   "scope": "",
   "theme_color": "#070707",
   "background_color": "#070707",
-  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait"
 }
