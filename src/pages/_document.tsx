@@ -29,6 +29,7 @@ class MyDocument extends Document {
                     <meta name="description" content={APP_DESCRIPTION} />
                     <meta name="format-detection" content="telephone=no" />
                     <meta name="mobile-web-app-capable" content="yes" />
+                    <meta name="theme-color" content="#000000" />
                     <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png" />
                     <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png" />
                     <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png" />
@@ -87,7 +88,6 @@ class MyDocument extends Document {
                         rel="stylesheet"
                     />
                     <link href="/manifest.json" rel="manifest" />
-                    <meta name=" theme-color" content="#070707" />
                 </Head>
                 <body>
                     <ColorModeScript />
