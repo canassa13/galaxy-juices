@@ -5,13 +5,11 @@ import { FiMenu, FiShoppingCart } from 'react-icons/fi';
 import Box from '../../components/layout/Box';
 import Flex from '../../components/layout/Flex';
 import Drawer from '../Drawer';
-import Item from './Item';
+import Item, { ListItemProps } from '../ListItem';
 
-export interface HeaderProps {
-    colorTheme?: 'white' | 'black';
-}
+type HeaderProps = Pick<ListItemProps, 'fontColor'>;
 
-const Header: React.FC<HeaderProps> = ({ colorTheme = 'white' }) => {
+const Header: React.FC<HeaderProps> = ({ fontColor = 'white' }) => {
     const { onOpen, isOpen, onClose } = useDisclosure();
 
     return (
@@ -24,21 +22,21 @@ const Header: React.FC<HeaderProps> = ({ colorTheme = 'white' }) => {
                 alignItems="center"
                 width="40%"
                 display={{ base: 'none', md: 'flex' }}>
-                <Item href="/loja" colorTheme={colorTheme}>
+                <Item href="/loja" fontColor={fontColor}>
                     Loja
                 </Item>
-                <Item href="/" colorTheme={colorTheme}>
+                <Item href="/" fontColor={fontColor}>
                     Contato
                 </Item>
-                <Item href="/" colorTheme={colorTheme}>
+                <Item href="/" fontColor={fontColor}>
                     Minha Conta
                 </Item>
-                <Item href="/carrinho" colorTheme={colorTheme}>
-                    <FiShoppingCart color={colorTheme} />
+                <Item href="/carrinho" fontColor={fontColor}>
+                    <FiShoppingCart color={fontColor} />
                 </Item>
             </Box>
             <Box marginX="unset" display={{ base: 'flex', md: 'none' }} onClick={onOpen}>
-                <FiMenu color={colorTheme} />
+                <FiMenu color={fontColor} />
             </Box>
             <Drawer isOpen={isOpen} onClose={onClose} />
         </Flex>
