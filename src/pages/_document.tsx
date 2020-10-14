@@ -87,6 +87,7 @@ class MyDocument extends Document {
                         rel="stylesheet"
                     />
                     <link href="/manifest.json" rel="manifest" />
+                    <meta name=" theme-color" content="#070707" />
                 </Head>
                 <body>
                     <ColorModeScript />
