@@ -1,4 +1,4 @@
-import background from '../../assets/svg/background.svg';
+import background from '../../assets/png/background.png';
 import Box from '../../components/layout/Box';
 
 const Background: React.FC = ({ children }) => {
