@@ -7,8 +7,8 @@ const Card: React.FC = () => {
     return (
         <Flex flexDirection="column" align="center" justify="center">
             <Flex
-                h={300}
                 w={300}
+                h={300}
                 bgPos="center center"
                 bgRepeat="no-repeat"
                 bgSize="cover"
