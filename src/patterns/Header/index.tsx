@@ -13,7 +13,7 @@ const Header: React.FC<HeaderProps> = ({ fontColor = 'white' }) => {
     const { onOpen, isOpen, onClose } = useDisclosure();
 
     return (
-        <Flex px={5} align="center" justify="flex-end" h="80px" color="white">
+        <Flex as="heading" px={5} align="center" justify="flex-end" h="80px" color="white">
             <Box
                 as="ul"
                 listStyleType="none"
