@@ -3,17 +3,23 @@ import { FiEye } from 'react-icons/fi';
 import mockCard from '../../assets/png/mockCard.png';
 import Flex from '../../components/layout/Flex';
 import Text from '../../components/typography/Text';
+
 const Card: React.FC = () => {
     return (
         <Flex flexDirection="column" align="center" justify="center">
             <Flex
+                borderRadius="5px"
                 w={300}
                 h={300}
                 bgPos="center center"
                 bgRepeat="no-repeat"
                 bgSize="cover"
                 bgImage={`url(${mockCard})`}
-                cursor="pointer">
+                cursor="pointer"
+                transition="box-shadow 0.2s"
+                _hover={{
+                    boxShadow: '0 2px 4px rgba(0,0,0,1)'
+                }}>
                 <Flex
                     opacity={0}
                     w="100%"
@@ -24,13 +30,13 @@ const Card: React.FC = () => {
                         opacity: 1
                     }}>
                     <Flex
+                        borderRadius="5px"
                         align="center"
                         justifyContent="center"
                         transition="background 0.2s"
-                        background="rgba(0,0,0,0.6)"
+                        background="rgba(0,0,0,0.4)"
                         _hover={{
-                            background: 'rgba(0,0,0,0.8)',
-                            opacity: 1
+                            background: 'rgba(0,0,0,0.6)'
                         }}
                         h={10}
                         w="100%">

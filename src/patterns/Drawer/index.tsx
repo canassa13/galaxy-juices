@@ -36,13 +36,13 @@ const Drawer: React.FC<DrawerProps> = ({ isOpen, onClose }) => {
                             <Item href="/loja" fontColor={color}>
                                 Loja
                             </Item>
-                            <Item href="/" fontColor={color}>
+                            <Item href="/loja" fontColor={color}>
                                 Contato
                             </Item>
-                            <Item href="/" fontColor={color}>
+                            <Item href="/loja" fontColor={color}>
                                 Minha Conta
                             </Item>
-                            <Item href="/carrinho" fontColor={color}>
+                            <Item href="/loja" fontColor={color}>
                                 Meu Carrinho
                             </Item>
                         </Flex>
