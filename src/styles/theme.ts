@@ -2,13 +2,16 @@ import { extendTheme } from '@chakra-ui/core';
 
 const customTheme = extendTheme({
     fonts: {
-        body: 'Bungee, system-ui, sans-serif',
-        heading: 'Bungee, system-ui, sans-serif'
+        body: 'Roboto, system-ui, sans-serif',
+        heading: 'Roboto, system-ui, sans-serif',
+        mono: 'Menlo, monospace'
     },
     colors: {
+        white: '#f8f8f8',
+        black: '#121214',
         gray: {
-            500: '#686868',
-            600: '#3A3A3A'
+            500: '#a8a8b3',
+            600: '#202024'
         }
     }
 });

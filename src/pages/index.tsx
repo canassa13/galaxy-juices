@@ -11,7 +11,7 @@ const Home: React.FC = () => {
         <>
             <Head title="Galaxy Juices BR" />
             <Background>
-                <Header />
+                <Header backgroundColor="transparent" fontColor="white" />
             </Background>
             <Banner />
             <Footer />

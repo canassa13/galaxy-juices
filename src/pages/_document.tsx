@@ -1,4 +1,3 @@
-import { ColorModeScript } from '@chakra-ui/core';
 import Document, {
     DocumentContext,
     DocumentInitialProps,
@@ -84,13 +83,12 @@ class MyDocument extends Document {
                         href="/icons/favicon-16x16.png"
                     />
                     <link
-                        href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+                        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
                         rel="stylesheet"
                     />
                     <link href="/manifest.json" rel="manifest" />
                 </Head>
                 <body>
-                    <ColorModeScript />
                     <Main />
                     <NextScript />
                 </body>

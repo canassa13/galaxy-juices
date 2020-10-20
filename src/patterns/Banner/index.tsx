@@ -3,10 +3,10 @@ import Text from '../../components/typography/Text';
 
 const Banner: React.FC = () => {
     return (
-        <Flex maxWidth="unset" h={{ base: 700, md: 500 }} bgColor="black">
+        <Flex maxWidth="unset" bgColor="black">
             <Flex p={5} justify="center" align="center" direction="column">
                 <Text textAlign="center" fontWeight="300" color="gray.500">
-                    SOBRE NÓS
+                    Sobre Nós
                 </Text>
                 <Text
                     marginBottom={4}
@@ -14,7 +14,7 @@ const Banner: React.FC = () => {
                     fontSize={{ base: '30px', md: '40px' }}
                     color="white"
                     fontWeight="600">
-                    uma galáxia contida em um frasco
+                    Uma galáxia contida em um frasco
                 </Text>
                 <Text
                     textAlign="center"
@@ -22,7 +22,7 @@ const Banner: React.FC = () => {
                     fontWeight="300"
                     lineHeight="2em"
                     color="gray.500">
-                    desde 2018 no mercado, a galaxy juices produz ‘premium e-liquid’ para
+                    Desde 2018 no mercado, a galaxy juices produz ‘premium e-liquid’ para
                     vaporizadores e podsystems. com produtos de alta qualidade, grande variedade e
                     deliciosas receitas, visando sempre a harmonia entre os sabores que compõe nossa
                     galáxia.
@@ -33,7 +33,7 @@ const Banner: React.FC = () => {
                     fontWeight="300"
                     lineHeight="2em"
                     color="gray.500">
-                    criada em santa cruz do rio pardo, interior de São Paulo, nossa proposta é que
+                    Criada em santa cruz do rio pardo, interior de São Paulo, nossa proposta é que
                     cada frasco seja uma experiência única.
                 </Text>
             </Flex>
